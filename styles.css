@@ -429,7 +429,21 @@ body{
 /* end of my name effect */
 
 /* card's are managed here  start*/
+.containercard::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.containercard::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+.containercard::-webkit-scrollbar-track {
+  background: #ddd; 
+}
 .containercard {
+  overflow-y: scroll;
   font-family: monospace;
   font-size:20px;
   overflow: auto;
