@@ -313,23 +313,14 @@ body{
 }
 
 .ui-btn span::before {
+  animation: chitchat linear 2s infinite;  
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
+  color:var(--green-color);
 }
 
-.ui-btn:hover, .ui-btn:focus {
-  background: var(--btn-hover-bg);
-}
-
-.ui-btn:hover span, .ui-btn:focus span {
-  color: var(--hover-btn-color);
-}
-
-.ui-btn:hover span::before, .ui-btn:focus span::before {
-  animation: chitchat linear both var(--btn-animation-duration);
-}
 
 @keyframes chitchat {
   0% {
@@ -430,8 +421,8 @@ body{
 
 /* card's are managed here  start*/
 .containercard::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
 }
 
 .containercard::-webkit-scrollbar-thumb {
