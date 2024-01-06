@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="styles.css">
 <head>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>
         Learn Share Grow
     </title>
@@ -9,6 +13,8 @@
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
     <div class="portnav topnav">
         <a class="color " href="#home">Home</a>
         <a class="color " href="https://github.com/c4rb0nx1">GITHUB</a>
@@ -17,7 +23,7 @@
     </div>
     <div class = "containerone">
         <section id = "left">
-            <div id="box">
+            <div id="boxone">
                 <h1 class = "me">
                     Hi I'm
                     <br>
@@ -27,137 +33,158 @@
                         </span>
                     </button>
                 </h1>
-                <h2 class  = "me-one-line">
+            <h2 class  = "mt-8 flex justify-center items-center text-base font-semibold text-neutral-500">
                     I am a cloud and cybersecurity enthusiast !
                 </h2>
                 <br>
             </div>
-            <div class = "redirects"> <!-- changing active-->
-                <a class = "btn" href="https://github.com/c4rb0nX1">Github</a>
+            <div class = " mt-8 text-centertext-sm text-emerald-50 uppercase tracking-widest font-medium text-no-underline hover:text-white"> <!-- changing active-->
+                <a class = "ml-6 btnredirects" href="https://github.com/c4rb0nX1">Github</a>
                 <span>&nbsp;·&nbsp;</span>
-                <a class = "btn" href="/">Blog</a>
+                <button class = "ml-4 btnredirects" hx-get="./index.html" hx-target="#right" hx-swap="outerHTML">HOME</button>
                 <span>&nbsp;·&nbsp;</span>
-                <a class = "btn" href="www.linkedin.com">LinkedIn</a>
+                <a class = "ml-4 btnredirects" href="www.linkedin.com">LinkedIn</a>
             </div>  
-            <hr class = "divider2" color="green">
-            <ul class = "post-list" style="list-style-type:none;">
-                <li>I blog here bruh</li>
-                <li>i do some shit stuff here</li>
-                <li>27 character than limituh!</li>
-            </ul>
+            <hr class = "divider2 mt-4 mr-4 ml-4 border-l-4 border-green-500">
+
+
+            <div class="h-64 overflow-y-auto font-mono text-white scrollbar-thin text-center -webkit-overflow-scrolling: touch">
+
+                <ul class="space-y-4 mr-4 ml-4 mt-4 mb-4 truncate w-25">
+                  <li class="truncate ..."><a href="./swap.html">your first homelab do's and Dont's. a beginner's experience</a></li>
+                  <li class="truncate ..."><a href="/blog/first-post">what do i say now is you need to build your own pc rn</a></li> 
+                  <li class="truncate ..."><a href="/blog/first-post">how to access your homelab over WAN securely using cloudflare / tailscale </a></li>
+                  <li class="truncate ..."><a href="/blog/first-post">Item 4</a></li>
+                  <li class="truncate ..."><a href="/blog/first-post">Item 5</a></li>
+                  <li class="truncate ..."><a href="/blog/first-post">Item 6</a></li>
+                  <li class="truncate ..."><a href="/blog/first-post">Item 7</a></li>
+                  <li class="truncate ...">
+                    <button hx-get="./swap.html" hx-target="#right" hx-swap="outerHTML">
+                        toggle light
+                    </button>
+                
+                  </li>
+                </ul>
+              
+            </div>
+            <!-- you just destroyed the button trying to align it .... plij re work with github -->
             <a href="assets\Niranchan-resume.pdf" download>
-                <button id="btn"  download>
-                    Resume <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                <button class ="flex items-center ml-16 mt-10 text-center text-white uppercase px-10 py-2.5 rounded-md border-2 border-white bg-zinc-900 shadow-md shadow-neutral-950 cursor-pointer transition transform active:shadow-none active:translate-x-1 active:translate-y-1" id="btnaa"  download>
+                    Resume <svg class="h-6 w-6 ml-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
                 </button>
             </a>
         </section>
     <!-- -----------------------------------section split -->
         <section id="right">
-            <div id="box2">
-                <div class = "whoami">
-                    <h2>
-                        whoami?
+                <div id="box2">
+                    <div class = " whoamiOne mt-20 ml-10 text-3xl font-semibold font-mono font-family: monospace text-white">
+                        <h2 class = "mb-4">
+                            whoami?
+                        </h2>
+                    </div>
+                    <P class = "about-title"> 
+                        Niranchan, also known as <span class="tooltipuh">c4rb0n</span>. A student who actively pursues academic and professional progress in the IT field while being motivated by his passion for cybersecurity, cloud computing and eager to participate in significant cloud projects and acquire real-world experience in preparation for a career in cloud computing. 
+                        Currently assisting in the creation of an AWS serverless web application.
+                    </P>
+                </div>
+                <br>
+                <hr class="divider1">
+                <br>
+                <h2 id="projects">
+                    Projects:
+                </h2>
+                <!-----------------cards-start -->
+                <div class=" mt-4 containercard">
+                    <div class="card">
+                    <p class="titlecard">
+                        Dark-web crawler
+                    </p>
+                    </div>
+                    <div class="card">
+                    <p class="titlecard">
+                        Hack Discord?   
+                    </p>
+                    </div>
+                    <div class="card">
+                    <p class="titlecard">
+                        Amazon web service
+                    </p>
+                    </div>
+                
+                    <div class="card">
+                    <p class="titlecard">
+                        Wifi-automation
+                    </p>
+                    </div>
+
+                </div>
+                <!-- cards end here-->
+
+                <!-- skill starts here -->
+                <h2 id="skills">
+                    Skills:
+                </h2>  
+                    <div class="flex flex-wrap ml-20 mt-4">
+                        <button class="m-2 flex items-center justify-center text-white bg-zinc-900 font-mono text-lg rounded-md px-4 py-2 transition duration-150 ease-in-out shadow-lg focus:shadow-inner focus:outline-none hover:shadow-lg hover:-translate-y-1 active:shadow-inner active:translate-y-1">
+                            #Python 
+                        </button>
+
+                        <button class="m-2 flex items-center justify-center text-white bg-zinc-900  font-mono text-lg rounded-md px-4 py-2 transition duration-150 ease-in-out shadow-lg focus:shadow-inner focus:outline-none hover:shadow-lg hover:-translate-y-1 active:shadow-inner active:translate-y-1">
+                            #javascript 
+                        </button>
+
+                        <button class="m-2 flex items-center justify-center text-white bg-zinc-900  font-mono text-lg rounded-md px-4 py-2 transition duration-150 ease-in-out shadow-lg focus:shadow-inner focus:outline-none hover:shadow-lg hover:-translate-y-1 active:shadow-inner active:translate-y-1">
+                            #HTML 
+                        </button>
+
+                        <button class="m-2 flex items-center justify-center text-white bg-zinc-900  font-mono text-lg rounded-md px-4 py-2 transition duration-150 ease-in-out shadow-lg focus:shadow-inner focus:outline-none hover:shadow-lg hover:-translate-y-1 active:shadow-inner active:translate-y-1">
+                            #CSS 
+                        </button> 
+                    </div>
+                    <h2 id="skills" class="mt-4">
+                        Timeline:
                     </h2>
+                    <!-- timeline -->
+                    <div class="timeline">
+                        <ol class="mt-8 ml-10 relative border-s border-gray-200 dark:border-gray-700">
+                            <li class="mb-4">
+                                <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                <time class="ml-4 mb-1  text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
+                                <h3 class="ml-4 text-lg  font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                                <p class=" ml-4  text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg></a>
+                            </li>
+                            <li class="mb-4">
+                                <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                <time class="ml-4 mb-1  text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
+                                <h3 class="ml-4 text-lg  font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                                <p class=" ml-4  text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg></a>
+                            </li>
+                            <li class="mb-4">
+                                <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                <time class="ml-4 mb-1  text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
+                                <h3 class="ml-4 text-lg  font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                                <p class=" ml-4  text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg></a>
+                            </li>
+                            <li class="mb-4">
+                                <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                <time class="ml-4 mb-1  text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
+                                <h3 class="ml-4 text-lg  font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                                <p class=" ml-4  text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg></a>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                    <!-- timeline-end -->
                 </div>
-                <P class = "about-title"> 
-                    Niranchan, also known as <span class="tooltipuh">c4rb0n</span>. A student who actively pursues academic and professional progress in the IT field while being motivated by his passion for cybersecurity, cloud computing and eager to participate in significant cloud projects and acquire real-world experience in preparation for a career in cloud computing. 
-                    Currently assisting in the creation of an AWS serverless web application.
-                </P>
-            </div>
-            <br>
-            <hr class="divider1">
-            <br>
-            <h2 id="projects">
-                Projects:
-            </h2>
-    <!-- ---------------cards-start -->
-    <div class="containercard">
-        <div class="card">
-          <p class="titlecard">
-            Dark-web crawler
-          </p>
-        </div>
-        <div class="card">
-          <p class="titlecard">
-            Hack Discord?
-          </p>
-        </div>
-        <div class="card">
-          <p class="titlecard">
-            Amazon web service
-          </p>
-        </div>
-      
-        <div class="card">
-          <p class="titlecard">
-            Wifi-automation
-          </p>
-        </div>
-
-      </div>
-        <!-- skill starts here -->
-        <h2 id="skills">
-            Skills:
-        </h2>
-        <div class="skills">
-            <div class="skill-box">
-                <span class="title">LINUX</span>
-    
-                <div class="skill-bar">
-                    <span class="skill-per linux">
-                        <span class="tooltip">50%</span>
-                    </span>
-                </div>
-            </div>
-            <div class="skill-box">
-                <span class="title">PYTHON</span>
-    
-                <div class="skill-bar">
-                    <span class="skill-per python">
-                        <span class="tooltip">70%</span>
-                    </span>
-                </div>
-            </div>
-
-
-            <div class="skill-box">
-                <span class="title">HTML</span>
-    
-                <div class="skill-bar">
-                    <span class="skill-per html">
-                        <span class="tooltip">50%</span>
-                    </span>
-                </div>
-            </div>
-    
-            <div class="skill-box">
-                <span class="title">CSS</span>
-    
-                <div class="skill-bar">
-                    <span class="skill-per css">
-                        <span class="tooltip">40%</span>
-                    </span>
-                </div>
-            </div>
-            <div class="skill-box">
-                <span class="title">JavaScript</span>
-    
-                <div class="skill-bar">
-                    <span class="skill-per javascript">
-                        <span class="tooltip">50%</span>
-                    </span>
-                </div>
-            </div>
-            <div class="skill-box">
-                <span class="title">NodeJS</span>
-    
-                <div class="skill-bar">
-                    <span class="skill-per nodejs">
-                        <span class="tooltip">30%</span>
-                    </span>
-                </div>
-            </div>
-        </div>
+                
         </section>
 </body>
 </html>
