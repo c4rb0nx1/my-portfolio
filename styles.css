@@ -115,6 +115,9 @@ body{
     .mobile-nav{
       display: none;
     }
+    .mobile-skill-wheel{
+      display:none;
+    }
 }
 
 @media (max-width: 425px) {
@@ -436,9 +439,6 @@ body{
   width: 100%;
 }
 
-.containercard:hover > :not(:hover) {
-  opacity: 0.2;
-}
 
 .titlecard {
   width: 100%;
