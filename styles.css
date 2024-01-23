@@ -112,7 +112,7 @@ body{
 } 
 
 @media (min-width:701px) and (max-width:2560px) {
-    .portnav{
+    .mobile-nav{
       display: none;
     }
 }
