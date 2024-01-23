@@ -109,6 +109,9 @@ body{
     justify-content: center;
     align-items: center;
   }
+  .about-title{
+    font-size: 14px; 
+  }
 } 
 
 @media (min-width:701px) and (max-width:2560px) {
