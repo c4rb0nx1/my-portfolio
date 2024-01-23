@@ -109,11 +109,6 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .about-title{
-    font-size: 14px; 
-    text-align:none;
-  }
-  
 } 
 
 @media (min-width:701px) and (max-width:2560px) {
@@ -122,6 +117,9 @@ body{
     }
     .mobile-skill-wheel{
       display:none;
+    }
+    .about-title{
+      font-size:20px;
     }
 }
 
@@ -211,7 +209,7 @@ body{
   text-align: justify;
   padding-left: 40px;
   padding-right: 40px;
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
   margin:0px;
   font-family: monospace;
