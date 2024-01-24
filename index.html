@@ -17,7 +17,7 @@
 
     <!-- start of new flowbite navbar mobile -->
     <div class = "mobile-nav">
-        <div class="fixed z-50 w-5/6 h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-8 left-1/2 dark:bg-zinc-900 dark:border-white-600">
+        <!-- <div class="fixed z-50 w-5/6 h-16 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-8 left-1/2 dark:bg-zinc-900 dark:border-white-600">
             <div class="grid h-full max-w-lg grid-cols-5 mx-auto">
                 <button data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
                     <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -73,7 +73,25 @@
                     <div class="tooltip-arrow" data-popper-arrow></div>
                 </div>
             </div>
+        </div> -->
+
+
+<div class="fixed bottom-0 z-50 w-full -translate-x-1/2 bg-white border-t border-gray-200 left-1/2 dark:bg-gray-700 dark:border-gray-600">
+    <div class="w-full">
+        <div class="grid max-w-xs grid-cols-3 gap-1 p-1 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600" role="group">
+            <button type="button" class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+                Home
+            </button>
+            <button type="button" class="px-5 py-1.5 text-xs font-medium text-white bg-gray-900 dark:bg-gray-300 dark:text-gray-900 rounded-lg">
+                Blog
+            </button>
+            <button type="button" class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+                Contact
+            </button>
         </div>
+    </div>
+</div>
+
 
             </div>
     <!-- end of new flowbite navbar   -->
@@ -118,7 +136,6 @@
                     <button hx-get="./swap.html" hx-target="#right" hx-swap="outerHTML">
                         Test htmx
                     </button>
-                
                   </li>
                 </ul>
               
@@ -191,7 +208,7 @@
                         </span>
                       </button>
                   
-                      <button class="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
+                      <button class="profile_item w-[150px] h-[150px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
                         <div class="w-full bg-black h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
                           <span class="w-200 h-20 inline-block">
                             <img src="https://avatars.githubusercontent.com/u/90444898?v=4" alt="Logo" class="w-20 h-20 object-cover rounded-full">
@@ -535,9 +552,7 @@
 
 <!-- footer start  -->
                 <div class="footer"> 
-
-                </div>
-                    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+                    <footer class="   bg-white rounded-lg shadow m-4 dark:bg-gray-800">
                         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
                         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
                         </span>
@@ -557,9 +572,11 @@
                         </ul>
                         </div>
                     </footer>
-<!-- footer end  -->
-                </div>
-                
+                </div>     
+                <div class="mb-16 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0">
+
+                </div>   
+<!-- footer end  -->                
         </section>
 </body>
 </html>
