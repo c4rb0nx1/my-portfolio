@@ -11,6 +11,11 @@
     transparent 6px
   );
 }
+
+*, html {
+
+  scroll-behavior: smooth !important;
+}
 /* this is the main container 
 which gonna contain two main 
 boxes right and left */
