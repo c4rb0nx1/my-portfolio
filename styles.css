@@ -126,6 +126,9 @@ body{
     .about-title{
       font-size:20px;
     }
+    #blog{
+      display:none;
+    }
 }
 
 @media (max-width: 425px) {
