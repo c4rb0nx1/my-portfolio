@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html class="scroll-smooth">
 <link rel="stylesheet" href="styles.css">
 <head>
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
@@ -20,11 +21,13 @@
         <div class=" fixed bottom-0 z-50 rounded-full w-full -translate-x-1/2 bg-white left-1/2 dark:bg-transparent dark:bg-transparent">
             <div class="w-full">
                 <div class="grid max-w-xs grid-cols-3 gap-1 p-2 mx-auto my-2 bg-gray-100 rounded-lg dark:bg-gray-600" role="group">
-                    <button type="button" class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
-                        Home
-                    </button>
+                    <a href="#blog">
+                        <button type="button" class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
+                            Blog
+                        </button>
+                    </a>
                     <button type="button" class="px-5 py-1.5 text-xs font-medium text-white bg-gray-900 dark:bg-gray-300 dark:text-gray-900 rounded-lg">
-                        Blog
+                        Home
                     </button>
                     <button type="button" class="px-5 py-1.5 text-xs font-medium text-gray-900 hover:bg-gray-200 dark:text-white dark:hover:bg-gray-700 rounded-lg">
                         Contact
@@ -347,6 +350,31 @@
                         </button> 
 
                     </div>
+
+                    <!-- blogs start  -->
+                    <h2 id="blog" class="mt-4 mb-4">
+                        <div id="skills">Blogs:</div>
+                    </h2>
+                    <div class="h-64 bg-zinc-900 overflow-y-auto font-mono text-white scrollbar-thin text-center -webkit-overflow-scrolling: touch">
+
+                        <ul class="space-y-4 mr-10 ml-10 mt-4 mb-4 truncate w-25">
+                          <li class="truncate ..."><a href="./swap.html">your first homelab do's and Dont's. a beginner's experience</a></li>
+                          <li class="truncate ..."><a href="/blog/first-post">what do i say now is you need to build your own pc rn</a></li> 
+                          <li class="truncate ..."><a href="/blog/first-post">how to access your homelab over WAN securely using cloudflare / tailscale </a></li>
+                          <li class="truncate ..."><a href="/blog/first-post">Item 4</a></li>
+                          <li class="truncate ..."><a href="/blog/first-post">Item 5</a></li>
+                          <li class="truncate ..."><a href="/blog/first-post">Item 6</a></li>
+                          <li class="truncate ..."><a href="/blog/first-post">Item 7</a></li>
+                          <li class="truncate ...">
+                            <button hx-get="./swap.html" hx-target="#right" hx-swap="outerHTML">
+                                Test htmx
+                            </button>
+                          </li>
+                        </ul>
+                      
+                    </div>
+
+                    <!-- blog end  -->
                     <h2 id="skills" class="mt-4">
                         Timeline:
                     </h2>
