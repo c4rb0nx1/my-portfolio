@@ -1,5 +1,5 @@
 <section id="right" class="cursor-cell">
-    <div class="mobile-skill-wheel mt-8">
+    <div id="home" class="mobile-skill-wheel mt-8">
         <div class="relative h-full w-full flex items-center justify-center">
             <div class="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
               <button class="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
@@ -71,7 +71,7 @@
     </div>
         <div id="box2">
             <div class = " whoamiOne mt-20 ml-10 text-3xl font-semibold font-mono font-family: monospace text-white">
-                <h2 class = "mb-4">
+                <h2 id="about" class = "mb-4">
                     whoami?
                 </h2>
             </div>
@@ -260,26 +260,28 @@
             </div>
 
             <!-- blogs start  -->
-            <h2 id="blog" class="mt-4 mb-4">
-                <div id="skills">Blogs:</div>
-            </h2>
-            <div class="h-64 bg-zinc-900 overflow-y-auto font-mono text-white scrollbar-thin text-center -webkit-overflow-scrolling: touch">
+            <div id="blog">
+                <h2 class="mt-4 mb-4">
+                    <div id="skills">Blogs:</div>
+                </h2>
+                <div class="h-64 bg-zinc-900 overflow-y-auto font-mono text-white scrollbar-thin text-center -webkit-overflow-scrolling: touch">
 
-                <ul class="space-y-4 mr-10 ml-10 mt-4 mb-4 truncate w-25">
-                  <li class="truncate ..."><a href="./swap.html">your first homelab do's and Dont's. a beginner's experience</a></li>
-                  <li class="truncate ..."><a href="/blog/first-post">what do i say now is you need to build your own pc rn</a></li> 
-                  <li class="truncate ..."><a href="/blog/first-post">how to access your homelab over WAN securely using cloudflare / tailscale </a></li>
-                  <li class="truncate ..."><a href="/blog/first-post">Item 4</a></li>
-                  <li class="truncate ..."><a href="/blog/first-post">Item 5</a></li>
-                  <li class="truncate ..."><a href="/blog/first-post">Item 6</a></li>
-                  <li class="truncate ..."><a href="/blog/first-post">Item 7</a></li>
-                  <li class="truncate ...">
-                    <button hx-get="./swap.html" hx-target="#right" hx-swap="outerHTML">
-                        Test htmx
-                    </button>
-                  </li>
-                </ul>
-              
+                    <ul class="space-y-4 mr-10 ml-10 mt-4 mb-4 truncate w-25">
+                    <li class="truncate ..."><a href="./swap.html">your first homelab do's and Dont's. a beginner's experience</a></li>
+                    <li class="truncate ..."><a href="/blog/first-post">what do i say now is you need to build your own pc rn</a></li> 
+                    <li class="truncate ..."><a href="/blog/first-post">how to access your homelab over WAN securely using cloudflare / tailscale </a></li>
+                    <li class="truncate ..."><a href="/blog/first-post">Item 4</a></li>
+                    <li class="truncate ..."><a href="/blog/first-post">Item 5</a></li>
+                    <li class="truncate ..."><a href="/blog/first-post">Item 6</a></li>
+                    <li class="truncate ..."><a href="/blog/first-post">Item 7</a></li>
+                    <li class="truncate ...">
+                        <button hx-get="./swap.html" hx-target="#right" hx-swap="outerHTML">
+                            Test htmx
+                        </button>
+                    </li>
+                    </ul>
+                
+                </div>
             </div>
 
             <!-- blog end  -->
